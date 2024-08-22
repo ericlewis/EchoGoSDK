@@ -3,10 +3,11 @@ package examples
 import (
 	"bytes"
 	"fmt"
-	"github.com/Binozo/EchoGoSDK/pkg/buttons"
-	"github.com/Binozo/EchoGoSDK/pkg/led"
-	"github.com/Binozo/EchoGoSDK/pkg/mic"
 	"time"
+
+	"github.com/ericlewis/EchoGoSDK/pkg/buttons"
+	"github.com/ericlewis/EchoGoSDK/pkg/led"
+	"github.com/ericlewis/EchoGoSDK/pkg/mic"
 )
 
 func main() {
