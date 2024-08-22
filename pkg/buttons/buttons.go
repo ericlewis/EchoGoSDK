@@ -1,9 +1,10 @@
 package buttons
 
 import (
-	evdev "github.com/gvalkov/golang-evdev"
 	"log"
 	"os/exec"
+
+	evdev "github.com/gvalkov/golang-evdev"
 )
 
 const dotButton = "/dev/input/event1"

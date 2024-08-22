@@ -1,8 +1,8 @@
 package speaker
 
 import (
-	"github.com/Binozo/GoTinyAlsa/pkg/pcm"
-	"github.com/Binozo/GoTinyAlsa/pkg/tinyalsa"
+	"github.com/ericlewis/GoTinyAlsa/pkg/pcm"
+	"github.com/ericlewis/GoTinyAlsa/pkg/tinyalsa"
 )
 
 const CardNr = 0
@@ -13,8 +13,8 @@ func GetDevice() tinyalsa.AlsaDevice {
 	return tinyalsa.NewDevice(CardNr, DeviceNr, pcm.Config{
 		Channels:    2,
 		SampleRate:  48000,
-		PeriodSize:  1024,
-		PeriodCount: 2,
+		PeriodSize:  2048,
+		PeriodCount: 4,
 		Format:      tinyalsa.PCM_FORMAT_S16_LE,
 	})
 }

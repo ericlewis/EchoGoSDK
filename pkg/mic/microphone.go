@@ -1,9 +1,10 @@
 package mic
 
 import (
-	"github.com/Binozo/GoTinyAlsa/pkg/pcm"
-	"github.com/Binozo/GoTinyAlsa/pkg/tinyalsa"
 	"os/exec"
+
+	"github.com/ericlewis/GoTinyAlsa/pkg/pcm"
+	"github.com/ericlewis/GoTinyAlsa/pkg/tinyalsa"
 )
 
 const CardNr = 0
